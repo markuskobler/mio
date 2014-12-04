@@ -36,6 +36,8 @@ pub struct Timer<T> {
     mask: u64,
 }
 
+pub const EMPTY_TIMEOUT: Timeout = Timeout{token: EMPTY, tick: 0u64};
+
 pub struct Timeout {
     // Reference into the timer entry slab
     token: Token,
