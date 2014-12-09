@@ -44,6 +44,8 @@ pub use event_loop::{
 };
 pub use timer::{
     Timeout,
+    TimerError,
+    TimerErrorKind,
     EMPTY_TIMEOUT,
 };
 pub use os::token::{
